@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Data Anak Posyandu</string>
+    <string name="nama">Nama</string>
+    <string name="umur">Umur</string>
+    <string name="beratbadan">Berat Badan</string>
+    <string name="tinggi_badan">Tinggi Badan</string>
+    <string name="bulan">Bulan</string>
+    <string name="simpan">Simpan</string>
+    <string name="id">id</string>
+    <string name="no_data_available">Tidak Ada Data</string>
+    <string name="content_posyandu">Aplikasi Posyandu</string>
+    <string name="aplikasi_posyandu">Aplikasi Posyandu</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+</resources>

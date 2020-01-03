@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:orientation="vertical"
+    tools:context=".view.DataPeriksaActivity">
+
+
+    <include
+        layout="@layout/item_periksa">
+
+    </include>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvPeriksa"
+        android:layout_width="match_parent"
+        android:layout_height="348dp"
+        android:paddingBottom="10dp"
+        tools:listitem="@layout/item_detail_periksa">
+
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/no_data_available" />
+
+      <android.support.design.widget.FloatingActionButton
+          android:id="@+id/fabAdd"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom|center"
+          android:layout_margin="@dimen/fab_margin"
+          app:srcCompat="@drawable/ic_add" />
+
+
+
+    <!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="6dp" >-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="6dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvNama"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/nama"/>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="6dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvUmur"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/umur"/>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="6dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvBeratBadan"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/beratbadan"/>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="6dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvTinggiBadan"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/tinggi_badan"/>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="6dp">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvBulan"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/bulan"/>-->
+<!--        </TableRow>-->
+
+<!--    </LinearLayout>-->
+<!--    -->
+
+
+
+
+
+</LinearLayout>
