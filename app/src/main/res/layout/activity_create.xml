@@ -39,53 +39,6 @@
             android:fontFamily="@font/notosans_regular" />
     </android.support.design.widget.TextInputLayout>
 
-<!--    <android.support.design.widget.TextInputLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:hint="@string/beratbadan">-->
-
-<!--        <EditText-->
-<!--            android:id="@+id/edtbb"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:inputType="textMultiLine"-->
-<!--            android:textSize="16sp"-->
-<!--            android:textColor="@color/primary_text"-->
-<!--            android:fontFamily="@font/notosans_regular" />-->
-<!--    </android.support.design.widget.TextInputLayout>-->
-
-<!--    <android.support.design.widget.TextInputLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:hint="@string/tinggi_badan">-->
-
-<!--        <EditText-->
-<!--            android:id="@+id/edttb"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:inputType="textMultiLine"-->
-<!--            android:textSize="16sp"-->
-<!--            android:textColor="@color/primary_text"-->
-<!--            android:fontFamily="@font/notosans_regular" />-->
-<!--    </android.support.design.widget.TextInputLayout>-->
-
-<!--    <android.support.design.widget.TextInputLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:hint="@string/bulan">-->
-
-<!--        <EditText-->
-<!--            android:id="@+id/edtbulan"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:inputType="text"-->
-<!--            android:textSize="16sp"-->
-<!--            android:textColor="@color/primary_text"-->
-<!--            android:fontFamily="@font/notosans_regular" />-->
-<!--    </android.support.design.widget.TextInputLayout>-->
 
     <Button
         android:id="@+id/btnSimpan"

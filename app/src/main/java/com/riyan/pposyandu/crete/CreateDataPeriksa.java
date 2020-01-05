@@ -62,7 +62,7 @@ public class CreateDataPeriksa extends AppCompatActivity {
         bundle = getIntent().getExtras();
         Id = bundle.getLong("id");
 
-        Toast.makeText(this, "id= ok "+Id, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "id= ok "+Id, Toast.LENGTH_SHORT).show();
 
         btnSimpan.setOnClickListener(new View.OnClickListener() {
             @Override

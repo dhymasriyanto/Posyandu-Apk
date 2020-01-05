@@ -29,13 +29,6 @@ public class DataAnakAdapterPeriksa extends RecyclerView.Adapter<DataAnakAdapter
         this.dataAnakaAdapterPeriksaCallback = dataAnakaAdapterCallback;
     }
 
-//    private DataAnakAdapterPeriksa.DataAnakaAdapterCallback dataAnakaAdapterCallback;
-
-//    public DataAnakAdapterPeriksa(List<TblAnakPeriksa> tblAnakPeriksaList, DataAnakAdapterPeriksa.DataAnakaAdapterCallback adapterCallback) {
-//        this.list = tblAnakList;
-//        this.dataAnakaAdapterCallback = adapterCallback;
-//    }
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {

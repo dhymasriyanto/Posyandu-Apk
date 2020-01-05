@@ -42,8 +42,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements DataAnakAdapter.DataAnakaAdapterCallback {
 
-//    @BindView(R.id.toolbar)
-//    Toolbar toolbar;
+
 
     @BindView(R.id.rvNote)
     RecyclerView rvNote;
@@ -91,33 +90,6 @@ public class MainActivity extends AppCompatActivity implements DataAnakAdapter.D
     }
 
 
-//
-//    private void initRecyclerviews() {
-//        tblAnakList = daoSession.getTblAnakDao().queryBuilder().list();
-//        dataAnakAdapter = new DataAnakAdapter(tblAnakList);
-//        rvNote.setLayoutManager(new LinearLayoutManager(this));
-//        rvNote.setItemAnimator(new DefaultItemAnimator());
-//        rvNote.setAdapter(dataAnakAdapter);
-//
-//        dataAnakAdapter.setOnItemClickCallback(new DataAnakAdapter.OnItemClickCallback() {
-//            @Override
-//            public void onItemClicked(TblAnak data) {
-//                showSelectDetail(data);
-//            }
-//        });
-//    }
-
-//    private void showSelectDetail(TblAnak data) {
-//        Intent i = new Intent(MainActivity.this, DataPeriksaActivity.class);
-//        i.putExtra("nama", data.getNama());
-//        i.putExtra("umur", data.getUmur());
-//        i.putExtra("bb", data.getBb());
-//        i.putExtra("tb", data.getTb());
-//        i.putExtra("bulan", data.getBulan());
-//        startActivity(i);
-//
-//    }
-
 
     @Override
     public void onLongClick(int position) {
@@ -136,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements DataAnakAdapter.D
         i.putExtra("tb", tb);
         i.putExtra("bulan", bulan);
 
-        Toast.makeText(this, "ID = " + id, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "ID = " + id, Toast.LENGTH_SHORT).show();
 
         startActivity(i);
     }

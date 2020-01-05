@@ -21,7 +21,7 @@ public class DataAnakAdapter extends RecyclerView.Adapter<DataAnakAdapter.ViewHo
 
     private List<TblAnak> list;
     private DataAnakaAdapterCallback dataAnakaAdapterCallback;
-//    private OnItemClickCallback onItemClickCallback;
+
 
 
     public DataAnakAdapter(List<TblAnak> tblAnakList, DataAnakaAdapterCallback adapterCallback) {
@@ -29,13 +29,7 @@ public class DataAnakAdapter extends RecyclerView.Adapter<DataAnakAdapter.ViewHo
         this.dataAnakaAdapterCallback = adapterCallback;
     }
 
-//    public DataAnakAdapter(List<TblAnak> tblAnakList) {
-//        this.list= tblAnakList;
-//    }
-//
-//    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback){
-//        this.onItemClickCallback = onItemClickCallback;
-//    }
+
 
 
     @NonNull
@@ -51,15 +45,9 @@ public class DataAnakAdapter extends RecyclerView.Adapter<DataAnakAdapter.ViewHo
 
         String nama = item.getNama();
         String umur = item.getUmur();
-//        String bb = item.getBb();
-//        String tb = item.getTb();
-//        String bulan = item.getBulan();
 
         holder.tvNama.setText(nama);
         holder.tvUmur.setText(umur +" Tahun ");
-//        holder.tvBb.setText(bb);
-//        holder.tvTb.setText(tb);
-//        holder.tvBulan.setText(bulan);
 
     }
 
@@ -81,15 +69,6 @@ public class DataAnakAdapter extends RecyclerView.Adapter<DataAnakAdapter.ViewHo
         @BindView(R.id.tvUmur)
         TextView tvUmur;
 
-//        @BindView(R.id.tvBb)
-//        TextView tvBb;
-//
-//        @BindView(R.id.tvTb)
-//        TextView tvTb;
-//
-//        @BindView(R.id.tvBulan)
-//        TextView tvBulan;
-
         @BindView(R.id.ivDelete)
         ImageView ivDelete;
 
@@ -104,13 +83,7 @@ public class DataAnakAdapter extends RecyclerView.Adapter<DataAnakAdapter.ViewHo
                 }
             });
 
-//            itemView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    dataAnakaAdapterCallback.onClick(getAdapterPosition());
-//                    return;r
-//                }
-//            });
+
 
             itemView.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
@@ -129,8 +102,5 @@ public class DataAnakAdapter extends RecyclerView.Adapter<DataAnakAdapter.ViewHo
         void onDelete(int position);
     }
 
-//
-//    public interface OnItemClickCallback {
-//        void onItemClicked(TblAnak data);
-//    }
+
 }

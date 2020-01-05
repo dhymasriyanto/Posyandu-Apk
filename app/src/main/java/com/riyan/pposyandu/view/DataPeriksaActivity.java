@@ -7,15 +7,21 @@ import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.riyan.pposyandu.ColumnChartActivity;
+import com.riyan.pposyandu.ColumnChartActivityTinggi;
 import com.riyan.pposyandu.R;
 import com.riyan.pposyandu.adapter.DataAnakAdapter;
 import com.riyan.pposyandu.adapter.DataAnakAdapterPeriksa;
 import com.riyan.pposyandu.crete.CreateDataPeriksa;
+import com.riyan.pposyandu.login.LoginActivity;
 import com.riyan.pposyandu.util.database.DaoHandler;
 import com.riyan.pposyandu.util.database.DaoSession;
 import com.riyan.pposyandu.util.database.TblAnak;
@@ -41,14 +47,7 @@ public class DataPeriksaActivity extends AppCompatActivity implements DataAnakAd
 
 
 
-//    @BindView(R.id.tvBeratBadan)
-//    TextView tvBb;
-//
-//    @BindView(R.id.tvTinggiBadan)
-//    TextView tvTb;
-//
-//    @BindView(R.id.tvBulan)
-//    TextView tvBulan;
+
 
     @BindView(R.id.rvPeriksa)
     RecyclerView rvPeriksa;
@@ -85,9 +84,6 @@ public class DataPeriksaActivity extends AppCompatActivity implements DataAnakAd
             Id = bundle.getLong("id");
             nama = bundle.getString("nama");
             umur = bundle.getString("umur");
-//            bb = bundle.getString("bb");
-//            tb = bundle.getString("tb");
-//            bulan = bundle.getString("bulan");
         }else {
             title = "No data";
         }
@@ -95,11 +91,7 @@ public class DataPeriksaActivity extends AppCompatActivity implements DataAnakAd
         tvNama.setText(nama);
         tvUmur.setText(umur +" Tahun");
 
-//        tvBb.setText(bb);
-//        tvTb.setText(tb);
-//        tvBulan.setText(bulan);
-
-        Toast.makeText(this, "id ="+Id, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, "id ="+Id, Toast.LENGTH_SHORT).show();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Data Periksa");
@@ -132,7 +124,7 @@ public class DataPeriksaActivity extends AppCompatActivity implements DataAnakAd
                 Intent i = new Intent(DataPeriksaActivity.this, CreateDataPeriksa.class);
                 i.putExtra("id", Id);
                 startActivity(i);
-                Toast.makeText(DataPeriksaActivity.this, "id= ok "+Id, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(DataPeriksaActivity.this, "id= ok "+Id, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -152,6 +144,22 @@ public class DataPeriksaActivity extends AppCompatActivity implements DataAnakAd
     @Override
     public boolean onSupportNavigateUp() {
         onBackPressed();
+        return true;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = new MenuInflater(this);
+        menuInflater.inflate(R.menu.menu_grafik,menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_berat_badan) {
+            startActivity(new Intent(this, ColumnChartActivity.class));
+        }else if (item.getItemId() == R.id.action_tinggi_badan){
+            startActivity(new Intent(this, ColumnChartActivityTinggi.class));
+        }
         return true;
     }
 }

@@ -65,12 +65,8 @@ public class CreateActivity extends AppCompatActivity {
                     tblAnak.setUmur(umur);
                     daoSession.getTblAnakDao().insert(tblAnak);
 
-//                    TblAnakPeriksa tblAnakPeriksa = new TblAnakPeriksa();
-//                    tblAnakPeriksa.setIdAnak(daoSession.getTblAnakDao().queryBuilder().limit(1).orderDesc(TblAnakDao.Properties.Id).list().get(0).getId());
-//                    daoSession.getTblAnakPeriksaDao().insert(tblAnakPeriksa);
-
                     Toast.makeText(CreateActivity.this, "Berhasil Menambahkan Data", Toast.LENGTH_SHORT).show();
-                    Toast.makeText(CreateActivity.this, "ID = "+daoSession.getTblAnakDao().queryBuilder().limit(1).orderDesc(TblAnakDao.Properties.Id).list().get(0).getNama(), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(CreateActivity.this, "ID = "+daoSession.getTblAnakDao().queryBuilder().limit(1).orderDesc(TblAnakDao.Properties.Id).list().get(0).getNama(), Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(CreateActivity.this, MainActivity.class).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK |Intent.FLAG_ACTIVITY_CLEAR_TOP));
                 }
             }
